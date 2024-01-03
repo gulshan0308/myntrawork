@@ -1,0 +1,163 @@
+@import"./grid/grid.scss";
+@import"./spacing/spacing.scss";
+@import"./text-align/alignment.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: sans-serif;
+
+    header {
+        color: #fff;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+        background-color: #fff;
+
+        .head-container {
+            width: 95%;
+            margin: auto;
+
+            .row {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                .search-icon {
+                    box-sizing: content-box;
+                    display: inline-block;
+                    height: 28px;
+                    width: 40px;
+                    text-align: center;
+                    padding: 8px 0 2px;
+                    background: #f5f5f6;
+                    border: 1px solid #f5f5f6;
+                    border-right: none;
+                    border-radius: 4px 0 0 4px;
+                    position: absolute;
+                    right: 46rem;
+                    color: #717288;
+                }
+
+                .logo {
+                    img {
+                        width: 7rem;
+                    }
+                }
+
+                UL {
+                    display: flex;
+                    gap: 2rem;
+                        a {
+                            font-size: 14px;
+                            letter-spacing: .3px;
+                            color: #282c3f;
+                            border-bottom: none;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                input {
+                    width: 25rem;
+                    font-size: 14px;
+                    height: 20px;
+                    line-height: 24px;
+                    color: #949494;
+                    box-sizing: content-box;
+                    padding: 8px 10px 10px;
+                    margin: 0 50px;
+                    outline: 0;
+                    border: 1px solid #f5f5f6;
+                    border-radius: 0 4px 4px 0;
+                    border-left: 0;
+                    background: #f5f5f6;
+                }
+
+                .user-icon {
+                    position: relative;
+                    a {
+                        margin: 18px;
+                        color: black;
+                    }
+
+                    .profile {
+                        color: #000;
+                        position: absolute;
+                        bottom: 9px;
+                        right: 12rem;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 6px;
+                        align-items: center;
+                    }
+
+                    .wishlist {
+                        color: #000;
+                        position: absolute;
+                        bottom: 9px;
+                        right: 8rem;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 6px;
+                    }
+
+                    .bag {
+                        color: #000;
+                        position: absolute;
+                        bottom: 9px;
+                        right: 85px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+header{
+     ul{
+          li{
+               position: relative;
+               .new{
+                    position: absolute;
+                    position: absolute;
+                    top: -6px;
+                    right: -33px;
+                    color: red;
+               }
+          }
+     }
+}
+.red{
+    color: red;
+}
+.drop-down{
+    
+    display: flex;
+    position: absolute;
+    gap: 37px ;
+    top: 62px;
+  
+    ul{
+        display: none !important;
+       color: #000;
+       
+       top: 31px;
+       line-height: 25px;
+    }
+}
+
+.men-drop{
+    position: relative;
+    a:hover ~ .drop-down ul{
+        display: block !important;
+    }
+}
