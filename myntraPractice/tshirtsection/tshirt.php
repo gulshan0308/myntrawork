@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <?php 
+        include('./header.php');
+      ?>
     <div class="container-fluid">
         <div class="row">
             <p>Home/ Clothing /<span> Mens T-shirts</span></p>
